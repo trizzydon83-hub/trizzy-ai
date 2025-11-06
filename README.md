@@ -1,62 +1,38 @@
-# 🤖 Trizzy AI
+# Trizzy AI UNIT
 
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=FF0000&background=000000&width=600&lines=Trizzy+Don+AKA+Sean+K+Phiri;Owner+of+the+Trizzy+AI+UNIT)
+**Owner:** Sean K Phiri (Trizzy Don)  
+**Bot Name:** Trizzy AI  
 
----
-
-## 🌐 Deployment Site
-
-Check Trizzy AI bot status and request a pair code here:
-
-[**Open Trizzy AI Deployment Site**](https://your-deployment-site.com)  
-
-![Trizzy AI Status](https://img.shields.io/badge/Status-Online-brightgreen)  
-
-> Click the link above to generate a pair code and link your WhatsApp number.
+![Anime Vampire Boy](https://i.pinimg.com/originals/0a/2b/3c/0a2b3c1234567890abcdef1234567890.jpg)
 
 ---
 
-## ⚙️ Deployment Options
+## 🌐 Deployment / Pairing Site
 
-### 1️⃣ **Render**
-1. Go to [Render](https://render.com) → **New Web Service**  
-2. Connect your GitHub repo  
-3. Environment: Node  
-4. Build Command: `npm install`  
-5. Start Command: `npm start`  
-6. Open logs → scan the QR code or use the **pair code site**
+Access the Trizzy AI pairing site here:
+
+[**Open Trizzy AI Deployment Site**](https://trizzy-ai-pairing.onrender.com)
+
+> Click the buttons on the site to request a pair code and link your WhatsApp number. Supports both **Main Bot** and **Mini Bot** pairing.
 
 ---
 
-### 2️⃣ **Railway**
-1. Go to [Railway](https://railway.app) → **New Project**  
-2. Import GitHub repo  
-3. Set Node.js environment  
-4. Add environment variables (`OPENWEATHER_API_KEY`)  
-5. Deploy → Access the deployment site for pairing
+## 📝 Features
+
+- **Main Bot Pairing:** Click **Request Pair Code** and send `!pair <CODE>` to Trizzy AI on WhatsApp.  
+- **Mini Bot Pairing:** Click **Request Mini Bot Pair** and send `!mini-pair <CODE>` to Trizzy AI.  
+- Codes **expire after 5 minutes** for security.  
+- Paired numbers are saved in `linked.json` (main) and `mini-linked.json` (mini).  
 
 ---
 
-### 3️⃣ **Vercel**
-1. Go to [Vercel](https://vercel.com) → **Import Project**  
-2. Select GitHub repo  
-3. Framework Preset: **Other**  
-4. Build Command: `npm install`  
-5. Output Directory: `public`  
-6. Deploy → Visit URL to request pair code
+## 🖤 Theme 
 
 ---
 
-### 4️⃣ **Replit**
-1. Go to [Replit](https://replit.com) → **Import from GitHub**  
-2. Add `package.json` and `server.js`  
-3. Run → Open Webview to access pair code site
+## ⚡ Setup Instructions
 
----
-
-### 5️⃣ **Local Deployment**
-1. Clone repo:
+1. Clone the repository:  
 ```bash
-git clone https://github.com/YOUR_USERNAME/trizzy-ai.git
+git clone https://github.com/yourusername/trizzy-ai.git
 cd trizzy-ai
-npm install
