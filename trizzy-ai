@@ -1,4 +1,5 @@
 trizzy-ai/
+├── .gitignore
 ├── package.json
 ├── Procfile
 ├── README.md
@@ -12,4 +13,5 @@ trizzy-ai/
 │   ├── news.js
 │   ├── rates.js
 │   ├── weather.js
-│   └── joke.js
+│   ├── joke.js
+│   └── music.js
