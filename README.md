@@ -6,9 +6,7 @@
 
 ## 🧛 Vampire Anime Mood
 
-![Vampire Anime Boy](https://i.pinimg.com/originals/8f/7d/3b/8f7d3b13a7b1e95e30b5ed8c2e1d4b7f.jpg)
-*Anime vampire boy in red & black theme, standing in the rain, moody atmosphere*
-
+![Vampire Anime Boy](
 ---
 
 ## 💡 About Trizzy AI
