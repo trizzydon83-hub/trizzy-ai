@@ -1,17 +1,5 @@
-trizzy-ai/
-├── .gitignore
-├── package.json
-├── Procfile
-├── README.md
-├── index.js
-├── config.js
-├── commands/
-│   ├── about.js
-│   ├── help.js
-│   ├── ping.js
-│   ├── pair.js
-│   ├── news.js
-│   ├── rates.js
-│   ├── weather.js
-│   ├── joke.js
-│   └── music.js
+pair-code-site/
+├── index.html        # Frontend to request pair codes
+├── server.js         # Node.js backend + Baileys bot listener
+├── package.json      # Dependencies
+└── auth_info.json    # Optional session file (can be generated on first run)
