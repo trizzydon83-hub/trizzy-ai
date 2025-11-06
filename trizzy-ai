@@ -1,0 +1,15 @@
+trizzy-ai/
+├── package.json
+├── Procfile
+├── README.md
+├── index.js
+├── config.js
+├── commands/
+│   ├── about.js
+│   ├── help.js
+│   ├── ping.js
+│   ├── pair.js
+│   ├── news.js
+│   ├── rates.js
+│   ├── weather.js
+│   └── joke.js
