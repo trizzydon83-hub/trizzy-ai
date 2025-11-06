@@ -38,17 +38,7 @@ Access the Trizzy AI pairing site:
 ---
 
 ## 🖤 Theme
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script>
-var typed = new Typed('#typing', {
-  strings: ["Trizzy Don AKA Sean K Phiri"],
-  typeSpeed: 80,
-  backSpeed: 50,
-  loop: true
-});
-</script>
 
----
 
 ## ⚡ Setup Instructions
 
