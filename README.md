@@ -6,8 +6,8 @@
 
 ## 🧛 Vampire Anime Mood
 
-![Vampire Anime Boy](https://i.pinimg.com/originals/8f/7d/3b/8f7d3b13a7b1e95e30b5ed8c2e1d4b7f.jpg)  
-*Anime vampire boy in a red & black theme, moody aesthetic*
+![Vampire Anime Boy](https://i.pinimg.com/originals/8f/7d/3b/8f7d3b13a7b1e95e30b5ed8c2e1d4b7f.jpg)
+*Anime vampire boy in red & black theme, standing in the rain, moody atmosphere*
 
 ---
 
@@ -31,6 +31,6 @@ Trizzy AI is a WhatsApp bot built with Node.js and the Baileys library. Features
 1. Install Node.js (v18+)
 2. Clone the repo:
 ```bash
-git clone https://github.com/YOUR_USERNAME/trizzy-ai.git
+git clone https://github.com/trizzydon83-hub /trizzy-ai.git
 cd trizzy-ai
 npm install
