@@ -1,5 +1,9 @@
-pair-code-site/
-├── index.html        # Frontend to request pair codes
-├── server.js         # Node.js backend + Baileys bot listener
-├── package.json      # Dependencies
-└── auth_info.json    # Optional session file (can be generated on first run)
+trizzy-ai/
+├── server.js         # Node.js + Express backend for pair codes
+├── bot.js            # WhatsApp bot listener
+├── public/
+│   ├── index.html    # Pairing site frontend
+│   └── style.css
+├── linked.json       # Linked numbers (main bot)
+├── mini-linked.json  # Linked numbers (mini bot)
+├── package.json
