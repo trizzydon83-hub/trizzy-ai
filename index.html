@@ -42,3 +42,15 @@ setInterval(updateStatus, 5000);
 </script>
 </body>
 </html>
+<h2>Mini Bot Pair</h2>
+<p>Click below to generate a mini bot pair code. Send it to Trizzy AI on WhatsApp using <code>!mini-pair &lt;CODE&gt;</code></p>
+<button id="requestMiniPair">Request Mini Bot Pair</button>
+<div id="miniCode"></div>
+
+<script>
+document.getElementById("requestMiniPair").addEventListener("click", async () => {
+  const res = await fetch("/request-mini-pair");
+  const data = await res.json();
+  document.getElementById("miniCode").textContent = data.code;
+});
+</script>
