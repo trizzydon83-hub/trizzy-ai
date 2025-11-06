@@ -2,11 +2,12 @@ const express = require('express');
 const cors = require('cors');
 const crypto = require('crypto');
 const fs = require('fs');
+const path = require('path');
 
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use(express.static('public')); // serve frontend
+app.use(express.static(path.join(__dirname, 'public')));
 
 // ----------------------------
 // Main Bot Pair Codes
@@ -15,7 +16,7 @@ let activePairCodes = {};
 app.get('/request-pair', (req, res) => {
   const code = crypto.randomBytes(3).toString('hex').toUpperCase();
   activePairCodes[code] = Date.now();
-  setTimeout(() => delete activePairCodes[code], 5*60*1000); // expire 5min
+  setTimeout(() => delete activePairCodes[code], 5*60*1000); // expire 5 min
   res.json({ code });
 });
 
@@ -26,16 +27,17 @@ let miniPairCodes = {};
 app.get('/request-mini-pair', (req, res) => {
   const code = crypto.randomBytes(3).toString('hex').toUpperCase();
   miniPairCodes[code] = Date.now();
-  setTimeout(() => delete miniPairCodes[code], 5*60*1000); // expire 5min
+  setTimeout(() => delete miniPairCodes[code], 5*60*1000);
   res.json({ code });
 });
 
 // ----------------------------
-// Status
+// Status endpoint
 // ----------------------------
-app.get('/status', (req, res) => {
-  res.json({ online: true });
-});
+app.get('/status', (req, res) => res.json({ online: true }));
 
+// ----------------------------
+// Start server
+// ----------------------------
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Pairing server running on http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Pairing server running on port ${PORT}`));
