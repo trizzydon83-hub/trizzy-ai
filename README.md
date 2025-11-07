@@ -22,7 +22,7 @@
 
 Access the Trizzy AI pairing site:
 
-[**Open Trizzy AI Deployment Site**](https://trizzy-ai-pairing.onrender.com)
+[**Open Trizzy AI Deployment Site**](Open Pairing Site UI:** [https://solo-leveling-mini.dexter.it.com/](https://solo-leveling-mini.dexter.it.com/) )
 
 > Click the buttons on the site to request a pair code and link your WhatsApp number. Supports both **Main Bot** and **Mini Bot** pairing.
 
@@ -54,9 +54,10 @@ cd trizzy-ai
 ## 🌐 Deployment / Pairing Site
 
 You can request pair codes directly from the live deployment site:
+**Main Bot Pair Code:** [https://solo-leveling-mini.dexter.it.com/request-pair]
+- **Mini Bot 
 
-- **Main Bot Pair Code:** [https://solo-leveling-mini.dexter.it.com/request-pair](https://solo-leveling-mini.dexter.it.com/request-pair)  
-- **Mini Bot Pair Code:** [https://solo-leveling-mini.dexter.it.com/request-mini-pair](https://solo-leveling-mini.dexter.it.com/request-mini-pair)  
-- **Open Pairing Site UI:** [https://solo-leveling-mini.dexter.it.com/](https://solo-leveling-mini.dexter.it.com/)
+- **Open Pairing Site UI:** [https://solo-leveling-mini.dexter.it.com/](https://solo-leveling-mini.dexter.it.com/) 
+- 
 
 ---
