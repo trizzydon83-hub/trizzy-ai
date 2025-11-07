@@ -46,3 +46,17 @@ Access the Trizzy AI pairing site:
 ```bash
 git clone https://github.com/yourusername/trizzy-ai.git
 cd trizzy-ai
+# Trizzy AI UNIT
+
+**Owner:** Sean K Phiri (Trizzy Don)  
+**Bot Name:** Trizzy AI  
+
+## 🌐 Deployment / Pairing Site
+
+You can request pair codes directly from the live deployment site:
+
+- **Main Bot Pair Code:** [https://solo-leveling-mini.dexter.it.com/request-pair](https://solo-leveling-mini.dexter.it.com/request-pair)  
+- **Mini Bot Pair Code:** [https://solo-leveling-mini.dexter.it.com/request-mini-pair](https://solo-leveling-mini.dexter.it.com/request-mini-pair)  
+- **Open Pairing Site UI:** [https://solo-leveling-mini.dexter.it.com/](https://solo-leveling-mini.dexter.it.com/)
+
+---
