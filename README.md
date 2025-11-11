@@ -1,223 +1,86 @@
+<div align="center">
+
+<!-- HEADER BANNER -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B0000,50:FF0000,100:8B0000&height=200&section=header&text=TRIZZY%20AI%20UNIT&fontSize=55&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=Created%20by%20Trizzy%20Don%20(AKA%20Sean%20K.%20Phiri)&descAlignY=55&descSize=20" />
+
+<!-- Typing Banner -->
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&pause=1000&color=FF0000&center=true&vCenter=true&width=900&lines=🔥+Trizzy+Don+AKA+Sean+K.+Phiri;💻+Owner+of+the+Trizzy+AI+UNIT;⚡+Fast%2C+Simple%2C+and+Powerful;🚀+Next+Gen+WhatsApp+Bot" alt="Typing Animation" />
 </p>
 
-> general hosting by Trizzy Don WhatsApp bot multi device ✓
-
-  
-**Status**: `Active Maintenance`  
-**Estimated Completion**: 2025-11-20  
-**Progress**: 
-```diff
-+ Completed [██████████░░░░░░░░░░░░] 40%
-- Pending  [░░░░░░░░░░░░░░░░░░░░░░] 60%
-```
-
-##  Timeline
-```mermaid
-gantt
-    title Maintenance Schedule
-    dateFormat  YYYY-MM-DD
-    axisFormat %b %d
-    
-    section Core
-    Architecture Refactor     :active,  core, 2025-07-20, 30d
-    AI Integration            :         ai, after core, 45d
-    
-    section Interface
-    UI Redesign               :active,  ui, 2025-08-01, 60d
-    Mobile Overhaul           :         mobile, after ui, 30d
-```
-
-
+> 🚨 Official Multi-Device WhatsApp Bot by **Trizzy Don**  
+> Built for stability, speed, and easy deployment across multiple hosts.
 
 ---
 
-  </a>
-  <hr style="margin-top: 20px; margin-bottom: 20px;"/>
-</div>
+### 🌍 **Deployment Options**
 
-<table align="center" cellpadding="10" border="1">
-  <tr>
-    <td align="center">
-      <b>WhatsApp Trizzy </b><br>
-      ᴘᴀɪʀ & ᴅᴇᴘʟᴏʏ
-      <br><br>
-            <a href="trizzy-ai onlin.vercel.app/">
-        <img src="https://img.shields.io/badge/Trizzy%20AI%20.-white" alt="TRIZZY %20AI%20onᥣιnᥱ" width="300">
-      </a>
-    </td>
-    <td align="center">
-      <b>WhatsApp minibot</b><br>
-      ᴘᴀɪʀ & ᴅᴇᴘʟᴏʏ  
-      <br><br>
-        <a href="https://minibot-online.vercel.app/">
-        <img src="https://img.shields.io/badge/ᴍɪɴɪ%20ʙᴏᴛ%20.-white" alt="𝐏𝐚𝐢𝐫%20𝐬𝐞𝐬𝐬𝐢𝐨𝐧%20𝐜𝐨𝐝𝐞" width="300">
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <b>WhatsApp channel</b><br>
-      welcome channel update 
-      <br><br>
-      <a href="https://whatsapp.com/channel/0029VbBbDNVAu3aMPTVbWm2m">
-        <img src="https://img.shields.io/badge/WhatsApp%20bot%20update-blue" alt="𝐏𝐚𝐢𝐫%20𝐬𝐞𝐬𝐬𝐢𝐨𝐧%20𝐜𝐨𝐝𝐞" width="300">
-      </a>
-      </a>
-    </td>
-    <td align="center">
-      <b>forks</b><br>
-       hy welcome to repo fast forks jew
-      <br><br>
-       <a href="/fork">
-        <img src="https://img.shields.io/badge/git%20repo%20forks-red" alt="𝐏𝐚𝐢𝐫%20𝐬𝐞𝐬𝐬𝐢𝐨𝐧%20𝐜𝐨𝐝𝐞" width="300">
-      </a>
-      </a>
-    </td>
-  </tr>
-</table>
-
-
-
-
-##  **[Trizzy star dev Features message via ad]**
-
-<table>
-<tr>
-<td width="50%">
-
-### 🤖 **AI-Powered**
-- 🧠 **Multiple AI Providers** - OpenAI & Anthropic support
-- 💬 **Context-Aware** - Remembers conversation history
-- 🎯 **Smart Responses** - Natural, human-like interactions
-- 🌍 **Multi-Language** - Responds in user's language
-
-</td>
-<td width="50%">
-
-
-### **[WhatsApp Integration]**
-- 🔐 **Dual Auth** - QR Code & Pairing Code support
-- 🔄 **Auto-Reconnect** - Never miss a message
-- 💾 **Session Persistence** - Maintains connection across restarts
-- ⚡ **Real-time** - Instant message processing
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### **[Developer Friendly]**
-- 🚀 **One-Click Deploy** - Multiple platform support
-- 📊 **Health Monitoring** - Built-in status endpoints
-- 📝 **Comprehensive Logging** - Track all interactions
-- 🐳 **Docker Ready** - Containerized deployment
-
-</td>
-<td width="50%">
-
-### **[Rich Commands]**
-- `/start` - Activate bot in chat
-- `/stop` - Deactivate bot
-- `/help` - Show all commands
-- `/status` - Bot statistics
-- `/clear` - Reset conversation
-
-</td>
-</tr>
-</table>
-
-
-
+| Platform | Deploy Link | Description |
+|-----------|--------------|-------------|
+| 🟢 **Vercel (Main)** | [Deploy Now](https://trizzy-ai.vercel.app/) | Main pairing & deployment hub |
+| 🔵 **Render** | [Deploy on Render](https://render.com) | Simple one-click bot hosting |
+| 🟣 **Replit** | [Deploy on Replit](https://replit.com/~) | Easiest browser-based setup |
+| 🟠 **Railway** | [Deploy on Railway](https://railway.app) | Stable backend deployment option |
 
 ---
 
-##  **[WhatsApp Authentication]**
+### ⚙️ **Bot Features**
+- 🤖 Multi-device WhatsApp connection  
+- 🧠 AI-powered smart replies  
+- 🔐 Pairing Code Authentication  
+- 🔄 Auto-reconnect & session memory  
+- 🎵 Media & music commands  
+- ⚡ Fast message handling  
 
-<div align="center">
+---
 
-### Choose Your Authentication Method
+### 💬 **Authentication Methods**
 
-<table>
-<tr>
-<td width="50%" align="center">
-
-#### 📱 **QR Code Method**
-*Quick & Easy*
-
-1. Set `USE_PAIRING_CODE=false`
-2. Run the bot
-3. Scan QR code with WhatsApp
-4. ✅ Connected!
-
-</td>
-<td width="50%" align="center">
-
-[_Pairing Code Method_]
-*Recommended for Deployment*
-
+#### 🔹 Pairing Code (Recommended)
 1. Set `USE_PAIRING_CODE=true`
-2. Add your `PHONE_NUMBER`
-3. Get 8-digit code from logs
-4. Enter in WhatsApp > Linked Devices
-5. ✅ Connected!
+2. Add your `PHONE_NUMBER` in `.env`
+3. Run the bot and check logs for your 8-digit code  
+4. Enter the code in **WhatsApp → Linked Devices**
 
-</td>
-</tr>
-</table>
-
-</div>
+#### 🔹 QR Code (Optional)
+1. Set `USE_PAIRING_CODE=false`
+2. Scan the displayed QR code with WhatsApp  
+3. Connected instantly ✅
 
 ---
 
-## 🎮 **Njabulo JbBot Commands**
+### 🧩 **Example Commands**
 
-<div align="center">
-
-| Command | Description | Example |
-|---------|-------------|---------|
-| 🟢 `/start` | Activate bot in current chat | Makes bot respond to all messages |
-| 🔴 `/stop` | Deactivate bot in current chat | Bot stops responding |
-| ❓ `/help` | Show all available commands | Display command list |
-| ℹ️ `/about` | Bot information & stats | Version, model, provider info |
-| 🗑️ `/clear` | Clear conversation context | Reset chat memory |
-| 🏓 `/ping` | Test bot responsiveness | Quick health check |
-| 📊 `/status` | Show detailed bot status | Active chats, context size |
-
-</div>
+| Command | Description |
+|----------|--------------|
+| `/start` | Activate the bot |
+| `/stop` | Deactivate in current chat |
+| `/help` | Show command list |
+| `/about` | Info about Trizzy AI |
+| `/status` | View session & performance |
+| `/ping` | Test response time |
 
 ---
 
+### 🛠 **Environment Variables**
 
-<!-- Footer -->
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6A0DAD,50:8E44AD,100:9B59B6&height=120&section=footer&text=Thank%20You!&fontSize=40&fontColor=fff&animation=twinkling&fontAlignY=70&desc=Best+Whatsapp+Bot+❤️&descAlignY=88&descSize=14" />
-  <p><b>© 2025 Njabulo Jb | Made with 💝 by sir Njabulo Jb </b></p>
-</div>
-
-</div>
-Bot Commands**
-
-<div align="center">
-
-| Command | Description | Example |
-|---------|-------------|---------|
-| 🟢 `/start` | Activate bot in current chat | Makes bot respond to all messages |
-| 🔴 `/stop` | Deactivate bot in current chat | Bot stops responding |
-| ❓ `/help` | Show all available commands | Display command list |
-| ℹ️ `/about` | Bot information & stats | Version, model, provider info |
-| 🗑️ `/clear` | Clear conversation context | Reset chat memory |
-| 🏓 `/ping` | Test bot responsiveness | Quick health check |
-| 📊 `/status` | Show detailed bot status | Active chats, context size |
-
-</div>
+| Variable | Example | Description |
+|-----------|----------|-------------|
+| `BOT_NAME` | Trizzy AI | Bot display name |
+| `OWNER_NAME` | Sean Phiri | Owner name |
+| `PHONE_NUMBER` | 263782767055 | Linked WhatsApp number |
+| `USE_PAIRING_CODE` | true | Enable code auth |
+| `SESSION_FILE` | session.json | Path to save session |
 
 ---
 
+### ❤️ **Credits**
+Made with passion by **Trizzy Don (Sean K. Phiri)**  
+🩸 Red & Black Energy | ⚡ Unstoppable Speed | 💀 Vampire Vibes
 
-<!-- Footer -->
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6A0DAD,50:8E44AD,100:9B59B6&height=120&section=footer&text=Thank%20You!&fontSize=40&fontColor=fff&animation=twinkling&fontAlignY=70&desc=Best+Whatsapp+Bot+❤️&descAlignY=88&descSize=14" />
-  <p><b>© 2025 Njabulo Jb | Made with 💝 by sir Njabulo Jb </b></p>
-</div>
+---
+
+<!-- FOOTER -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B0000,50:FF0000,100:8B0000&height=120&section=footer&text=Thank%20You%20for%20Using%20Trizzy%20AI!&fontSize=30&fontColor=fff&animation=twinkling&fontAlignY=70" />
 
 </div>
