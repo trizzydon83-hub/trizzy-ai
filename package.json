@@ -1,15 +1,25 @@
 {
-  "name": "trizzy-ai",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
+    "description": "wasisession",
+    "main": "./itxxwasi.js",
+  "engines" : { 
+    "npm" : ">=9.7.2",
+    "node" : ">=20.0.0"
+    },
+    "scripts": {
+    "start": "node itxxwasi.js"
   },
+  "author": "WasiTech",
+  "license": "GPL-3.0 license",
   "dependencies": {
-    "@whiskeysockets/baileys": "^6.6.0",
-    "pino": "^9.0.0",
-    "rss-parser": "^3.12.0",
-    "node-fetch": "^2.6.12",
-    "qrcode-terminal": "^0.12.0"
-  }
+    "@whiskeysockets/baileys": "^6.5.0",
+    "maher-zubair-baileys": "^6.6.5",
+    "qrcode": "^1.5.3",
+    "awesome-phonenumber": "^2.64.0",
+    "pino": "^8.1.0",
+    "phone" : "3.1.30",
+    "body-parser": "^1.20.1",
+    "pastebin-js": "^1.0.6",
+    "express": "^4.18.1",
+    "path": "^0.12.7"
+   }
 }
