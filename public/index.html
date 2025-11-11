@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trizzy AI Pair Code</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔗 Trizzy AI Pair Site</h1>
+    <p>Click below to generate your WhatsApp bot pairing code.</p>
+    <button id="generate">Generate Pair Code</button>
+    <h2 id="pairCode"></h2>
+  </div>
+
+  <script>
+    document.getElementById("generate").addEventListener("click", async () => {
+      const codeDisplay = document.getElementById("pairCode");
+      codeDisplay.textContent = "Generating...";
+      const res = await fetch("/api/request-pair");
+      const data = await res.json();
+      codeDisplay.textContent = "Your Pair Code: " + data.code;
+    });
+  </script>
+</body>
+</html>
