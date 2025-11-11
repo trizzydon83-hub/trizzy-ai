@@ -1,15 +1,16 @@
 {
-    "description": "wasisession",
-    "main": "./itxxwasi.js",
+    "name": "trizzy-ai-whatsapp-bot",
+    "description": "WhatsApp bot pairing server",
+    "main": "server.js",
   "engines" : { 
     "npm" : ">=9.7.2",
     "node" : ">=20.0.0"
     },
     "scripts": {
-    "start": "node itxxwasi.js"
+    "start": "node server.js"
   },
   "author": "WasiTech",
-  "license": "GPL-3.0 license",
+  "license": "GPL-3.0",
   "dependencies": {
     "@whiskeysockets/baileys": "^6.5.0",
     "maher-zubair-baileys": "^6.6.5",
@@ -20,6 +21,8 @@
     "body-parser": "^1.20.1",
     "pastebin-js": "^1.0.6",
     "express": "^4.18.1",
+    "cors": "^2.8.5",
+    "node-fetch": "^2.7.0",
     "path": "^0.12.7"
    }
 }
