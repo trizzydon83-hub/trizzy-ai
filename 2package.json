@@ -1,0 +1,12 @@
+{
+  "name": "trizzy-pair-site",
+  "version": "1.0.0",
+  "description": "Trizzy AI Pair Code Generator",
+  "main": "api/pair.js",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
