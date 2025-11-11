@@ -39,5 +39,6 @@ app.get('/status', (req, res) => res.json({ online: true }));
 // ----------------------------
 // Start server
 // ----------------------------
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Pairing server running on port ${PORT}`));
+const PORT = process.env.PORT || 5000;
+const HOST = '0.0.0.0';
+app.listen(PORT, HOST, () => console.log(`Pairing server running on ${HOST}:${PORT}`));
