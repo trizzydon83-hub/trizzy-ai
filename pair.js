@@ -22,10 +22,12 @@ router.get('/', async (req, res) => {
     const id = makeid();
     let num = req.query.number;
         async function GIFTED_MD_PAIR_CODE() {
+        const sessionPath = './sessions/default';
+        if (!fs.existsSync('./sessions')) fs.mkdirSync('./sessions', { recursive: true });
         const {
             state,
             saveCreds
-        } = await useMultiFileAuthState('./temp/'+id)
+        } = await useMultiFileAuthState(sessionPath)
      try {
             let Pair_Code_By_Gifted_Tech = Gifted_Tech({
                 auth: {
@@ -52,7 +54,7 @@ router.get('/', async (req, res) => {
                 } = s;
                 if (connection == "open") {
                 await delay(5000);
-                let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
+                let data = fs.readFileSync(sessionPath + '/creds.json');
                 await delay(800);
                let b64data = Buffer.from(data).toString('base64');
                let session = await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id, { text: '' + b64data });
@@ -79,17 +81,16 @@ _Don't Forget To Give Star To My Repo_`
  await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id,{text:GIFTED_MD_TEXT},{quoted:session})
  
 
-        await delay(100);
-        await Pair_Code_By_Gifted_Tech.ws.close();
-        return await removeFile('./temp/'+id);
+                console.log('✅ Session saved to', sessionPath);
+                await delay(100);
+                await Pair_Code_By_Gifted_Tech.ws.close();
             } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10000);
                     GIFTED_MD_PAIR_CODE();
                 }
             });
         } catch (err) {
-            console.log("service restated");
-            await removeFile('./temp/'+id);
+            console.log("Pairing error:", err.message);
          if(!res.headersSent){
             await res.send({code:"Service Unavailable"});
          }

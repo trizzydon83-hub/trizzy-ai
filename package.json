@@ -7,7 +7,9 @@
     "node" : ">=20.0.0"
     },
     "scripts": {
-    "start": "node server.js"
+    "start": "node launcher.js",
+    "server": "node server.js",
+    "bot": "node index.js"
   },
   "author": "WasiTech",
   "license": "GPL-3.0",
