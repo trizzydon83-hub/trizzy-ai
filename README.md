@@ -79,7 +79,8 @@ Made with passion by **Trizzy Don (Sean K. Phiri)**
 🩸 Red & Black Energy | ⚡ Unstoppable Speed | 💀 Vampire Vibes
 
 ---
-
+https://24f56441-c765-4783-a792-4ea9257cb5bc-00-3r5d3pbpxupvw.janeway.replit.dev/
+https://replit.com/@trizzydon83/trizzy-ai
 <!-- FOOTER -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B0000,50:FF0000,100:8B0000&height=120&section=footer&text=Thank%20You%20for%20Using%20Trizzy%20AI!&fontSize=30&fontColor=fff&animation=twinkling&fontAlignY=70" />
 
