@@ -30,10 +30,8 @@ document.getElementById('btn').addEventListener('click', async ()=>{
   if(!phone){ result.textContent = 'Please enter your phone number.'; return; }
   result.textContent = 'Requesting code...';
   try{
-    const res = await fetch('/api/requestPair', {
-      method:'POST',
-      headers:{ 'content-type':'application/json' },
-      body: JSON.stringify({ phone })
+    const res = await fetch('/pair?number=' + encodeURIComponent(phone), {
+      method:'GET'
     });
     const data = await res.json();
     if(res.ok && data.code){

@@ -9,27 +9,9 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// ----------------------------
-// Main Bot Pair Codes
-// ----------------------------
-let activePairCodes = {};
-app.get('/request-pair', (req, res) => {
-  const code = crypto.randomBytes(3).toString('hex').toUpperCase();
-  activePairCodes[code] = Date.now();
-  setTimeout(() => delete activePairCodes[code], 5*60*1000); // expire 5 min
-  res.json({ code });
-});
+const pairRouter = require('./pair');
 
-// ----------------------------
-// Mini Bot Pair Codes
-// ----------------------------
-let miniPairCodes = {};
-app.get('/request-mini-pair', (req, res) => {
-  const code = crypto.randomBytes(3).toString('hex').toUpperCase();
-  miniPairCodes[code] = Date.now();
-  setTimeout(() => delete miniPairCodes[code], 5*60*1000);
-  res.json({ code });
-});
+app.use('/pair', pairRouter);
 
 // ----------------------------
 // Status endpoint
