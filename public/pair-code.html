@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Trizzy AI - Get Session Code</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 500px;
+      width: 100%;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+    .header p {
+      color: #a0a0a0;
+      font-size: 1rem;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #e0e0e0;
+      font-weight: 500;
+    }
+    input {
+      width: 100%;
+      padding: 15px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.05);
+      color: #fff;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+    input:focus {
+      outline: none;
+      border-color: #667eea;
+      background: rgba(255, 255, 255, 0.08);
+    }
+    input::placeholder {
+      color: #808080;
+    }
+    .btn {
+      width: 100%;
+      padding: 15px;
+      border-radius: 12px;
+      border: none;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+    }
+    .btn:active {
+      transform: translateY(0);
+    }
+    .btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+    .result {
+      margin-top: 25px;
+      padding: 20px;
+      border-radius: 12px;
+      background: rgba(102, 126, 234, 0.1);
+      border: 1px solid rgba(102, 126, 234, 0.3);
+      display: none;
+    }
+    .result.show {
+      display: block;
+      animation: slideIn 0.3s ease;
+    }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .code-display {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 4px;
+      color: #667eea;
+      margin: 15px 0;
+      font-family: 'Courier New', monospace;
+    }
+    .info {
+      margin-top: 20px;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 12px;
+      font-size: 0.9rem;
+      color: #b0b0b0;
+    }
+    .info ol {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+    .info li {
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+    .error {
+      background: rgba(220, 38, 38, 0.1);
+      border-color: rgba(220, 38, 38, 0.3);
+      color: #fca5a5;
+    }
+    .success {
+      text-align: center;
+      color: #a0a0a0;
+      font-size: 0.9rem;
+    }
+    .loader {
+      border: 3px solid rgba(255, 255, 255, 0.1);
+      border-top: 3px solid #667eea;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      animation: spin 0.8s linear infinite;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🤖 Trizzy AI</h1>
+      <p>Get Your WhatsApp Session Code</p>
+    </div>
+
+    <div class="card">
+      <form id="pairForm">
+        <div class="form-group">
+          <label for="phone">WhatsApp Phone Number</label>
+          <input 
+            type="tel" 
+            id="phone" 
+            placeholder="Enter with country code (e.g., +263782767055)" 
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn" id="submitBtn">
+          Get Pairing Code
+        </button>
+      </form>
+
+      <div id="result" class="result"></div>
+
+      <div class="info">
+        <strong>📱 How to pair:</strong>
+        <ol>
+          <li>Enter your WhatsApp number above</li>
+          <li>Click "Get Pairing Code"</li>
+          <li>Open WhatsApp → Settings → Linked Devices</li>
+          <li>Tap "Link a Device" → "Link with phone number instead"</li>
+          <li>Enter the code shown here</li>
+          <li>Your session will be sent to your WhatsApp</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('pairForm');
+    const phoneInput = document.getElementById('phone');
+    const submitBtn = document.getElementById('submitBtn');
+    const resultDiv = document.getElementById('result');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const phone = phoneInput.value.trim();
+      if (!phone) {
+        showResult('Please enter your phone number', 'error');
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="loader"></span> Generating code...';
+      resultDiv.classList.remove('show');
+
+      try {
+        const response = await fetch(`/pair?number=${encodeURIComponent(phone)}`);
+        const data = await response.json();
+
+        if (response.ok && data.code) {
+          showResult(`
+            <div class="code-display">${data.code}</div>
+            <div class="success">
+              ✅ Pairing code generated successfully!<br>
+              <small>Code expires in 5 minutes</small>
+            </div>
+          `, 'success');
+        } else {
+          showResult(data.error || 'Failed to generate code. Please try again.', 'error');
+        }
+      } catch (error) {
+        showResult('Network error. Please check your connection and try again.', 'error');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = 'Get Pairing Code';
+      }
+    });
+
+    function showResult(message, type) {
+      resultDiv.className = `result show ${type}`;
+      resultDiv.innerHTML = message;
+    }
+  </script>
+</body>
+</html>

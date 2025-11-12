@@ -1,48 +1,13 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Trizzy AI Pair Portal</title>
-  <style>
-    body { background: linear-gradient(135deg,#000,#8b0000); color:#fff; font-family:system-ui; display:flex; align-items:center; justify-content:center; height:100vh; margin:0; }
-    .card{ background:rgba(0,0,0,0.6); padding:28px; border-radius:12px; width:320px; text-align:center; border:2px solid rgba(255,0,0,0.2); }
-    input{ width:100%; padding:10px; border-radius:8px; border:1px solid #444; margin-top:10px; background:#111; color:#fff; }
-    button{ margin-top:12px; padding:10px 18px; background:#ff0000; border:none; color:#fff; font-weight:600; border-radius:8px; cursor:pointer; }
-    .code { margin-top:16px; padding:10px; background:rgba(255,255,255,0.04); border-radius:8px; color:#ffdddd; font-size:1.1rem; }
-    p.small { color:#bbb; font-size:0.85rem; margin-top:8px; }
-  </style>
+  <meta http-equiv="refresh" content="0; url=/pair-code.html">
+  <title>Trizzy AI - Redirecting...</title>
 </head>
 <body>
-  <div class="card">
-    <h2 style="color:#ff4c4c;margin:0">Trizzy AI Pair Portal</h2>
-    <p class="small">Enter the WhatsApp phone number you will use (international, e.g. +263782767055)</p>
-    <input id="phone" placeholder="+263782767055" />
-    <button id="btn">Request Pair Code</button>
-    <div id="result" class="code">No code yet</div>
-    <p class="small">The code will be sent to your Trizzy AI bot for verification. Codes expire (5 minutes).</p>
-  </div>
-
-<script>
-document.getElementById('btn').addEventListener('click', async ()=>{
-  const phone = document.getElementById('phone').value.trim();
-  const result = document.getElementById('result');
-  if(!phone){ result.textContent = 'Please enter your phone number.'; return; }
-  result.textContent = 'Requesting code...';
-  try{
-    const res = await fetch('/pair?number=' + encodeURIComponent(phone), {
-      method:'GET'
-    });
-    const data = await res.json();
-    if(res.ok && data.code){
-      result.textContent = 'Your Pair Code: ' + data.code;
-    } else {
-      result.textContent = 'Error: ' + (data.error || 'Failed to get code');
-    }
-  }catch(err){
-    result.textContent = 'Network error. Try again.';
-  }
-});
-</script>
+  <p>Redirecting to pairing page...</p>
+  <script>window.location.href = '/pair-code.html';</script>
 </body>
 </html>
