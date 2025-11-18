@@ -1,38 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trizzy AI Pairing</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
 </head>
+
 <body>
-<h1>Trizzy AI Pairing Site</h1>
-
-<div class="pair-section">
-  <h2>Main Bot Pair</h2>
-  <button id="requestPair">Request Pair Code</button>
-  <div id="pairCode"></div>
-</div>
-
-<div class="pair-section">
-  <h2>Mini Bot Pair</h2>
-  <button id="requestMiniPair">Request Mini Bot Pair</button>
-  <div id="miniCode"></div>
-</div>
-
-<script>
-document.getElementById('requestPair').addEventListener('click', async () => {
-  const res = await fetch('/request-pair');
-  const data = await res.json();
-  document.getElementById('pairCode').textContent = data.code;
-});
-
-document.getElementById('requestMiniPair').addEventListener('click', async () => {
-  const res = await fetch('/request-mini-pair');
-  const data = await res.json();
-  document.getElementById('miniCode').textContent = data.code;
-});
-</script>
+  
 </body>
+
 </html>
